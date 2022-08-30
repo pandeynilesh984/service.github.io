@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dycalendar.css">
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,700;1,700&display=swap');
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ body{
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+  .container{
+     position: relative;
+     max-width: 400px;
+     width: 90%;
+    
+     border-radius: 25px;
+     box-shadow: 0 10px 25px rgba(135, 91, 9, 0.1);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .container .form{
+     padding: 30px;
+     
+ 
+  }
+  .container .form .title{
+     position: relative;
+     font-size: 27px;
+     font-weight: 600;
+     color: black;
+     
+  }
+  
+.content{
+    width: 120%;
+    height: 126px;
+     background: white;
+     border-radius: 25px;
+     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+     align-items: center;
+     justify-content: center;
+     align-items: center;
+     display: block
+}
+  h6{
+    text-align: right;
+  }
+  .input-field button {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 10;
+    letter-spacing: 0px;
+    background: linear-gradient(270deg, #F9F37A 0%, #D2A95E 54.29%);
+
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    width: 120%;
+    height: 50px;
+    cursor: pointer;
+ }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form sign-up">
+                <span class="title">Schedule</span>
+                <div id="dycalendar"></div>
+                    
+
+    
+    <script src="dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar',
+            type: 'month',
+            dayformat: 'full',
+            monthformat: 'full',
+            highlighttargetdate: true,
+            prevnextbutton: 'show'
+        })
+    </script>
+    <div class="content">
+        <p>10:00 13:00</p>
+        <br>
+        <h5>Home Cleaning</h5>
+        <h6>$25.00</h6>         
+        <p>2 september 2022</p>
+    </div>
+    <br>
+        <div class="input-field button">
+            <button type="btn" class="signupbtn">Place Order</button>
+    </div>
+    <br>
+    <div class="input-field button">
+        <button type="btn" class="signupbtn">update Order</button>
+</div>
+</body>
+</html>
